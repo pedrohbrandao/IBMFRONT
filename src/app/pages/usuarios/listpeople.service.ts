@@ -1,4 +1,3 @@
-import { environment_prod } from './../../../environments/environment.prod';
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
@@ -20,7 +19,7 @@ export class ListpeopleService {
 
   constructor(private http: HttpClient) { }
 
-  url = environment_prod.url;
+  url = "http://ec2-3-21-56-178.us-east-2.compute.amazonaws.com:3000/";
   httpOptions = {
     headers: new HttpHeaders({
       'Content-Type': 'application/x-www-form-urlencoded',
