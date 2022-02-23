@@ -1,0 +1,18 @@
+<div style="margin: auto; margin-top: 44px;" class="card-container">
+  <span class="pro">
+    <mat-icon style="cursor: pointer;" [routerLink]="['/usuarios']">fast_rewind</mat-icon>
+  </span>
+  <img class="round" style="max-height: 139px;"
+    src="https://static.vecteezy.com/ti/vetor-gratis/t2/422799-avatar-icon-vector-illustration-gr%C3%A1tis-vetor.jpg"
+    alt="user" />
+  <h3>{{namevalue}}</h3>
+  <h6>{{profilevalue}}</h6>
+  <p>Lorem ipsum dolor sit amet, consectetur <br> adipisicing elit. </p>
+  <div class="buttons">
+    <button [routerLink]="['/new', {id:idvalue}]" mat-raised-button color="primary">Changer</button>
+    <button id="button2" style="margin-left: 10px; " (click)="confirmation(idvalue)" mat-raised-button
+      color="primary">Destroy</button>
+  </div>
+  <div class="skills">
+  </div>
+</div>

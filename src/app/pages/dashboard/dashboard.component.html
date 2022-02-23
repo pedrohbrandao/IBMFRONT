@@ -1,0 +1,40 @@
+<mat-grid-list class="carddash" cols="2" rowHeight="2:2">
+  
+  <div class="container">
+      <mat-grid-tile>
+        <div class="card">
+          <div class="face face1 ">
+            <div class="content">
+              <img
+                src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true">
+              <h3>People</h3>
+            </div>
+          </div>
+          <div class="face face2 contentcard">
+            <div class="content">
+              <p>Here you will see and edit people</p>
+              <button [routerLink]="['/usuarios']" mat-raised-button color="primary">See People</button>
+            </div>
+          </div>
+        </div>
+      </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="card">
+        <div class="face face1">
+          <div class="content">
+            <img
+              src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true">
+            <h3>New </h3>
+          </div>
+        </div>
+        <div class="face face2 contentcard">
+          <div class="content" style="display: inline; width: 100%;">
+            <p>Here you can create people</p>
+            <button [routerLink]="['/new']" mat-raised-button color="primary">New People</button>
+          </div>
+        </div>
+      </div>
+    </mat-grid-tile>
+    
+  </div>
+</mat-grid-list>
