@@ -1,4 +1,3 @@
-export const environment_prod = {
+export const environment = {
   production: true,
-  url:"http://localhost:3000/"
 };
