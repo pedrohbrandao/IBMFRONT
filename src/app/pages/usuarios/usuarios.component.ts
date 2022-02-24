@@ -53,6 +53,7 @@ export class UsuariosComponent implements OnInit {
   if (result.isConfirmed) {
     this.destroy(n)
     this.starttable()
+    this.starttable()
   }
 })
   }
